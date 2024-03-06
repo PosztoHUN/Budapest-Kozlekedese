@@ -1,0 +1,19 @@
+h1{
+    font-family: magneto;
+}
+h2{
+    font-family: magneto;
+}
+body{
+    background-repeat: repeat-y;
+    margin-left: 190px;
+    background-size: 180px;
+    text-align: justify;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.ikarus{
+    font-family: magneto;
+    font-weight: bold;
+}
