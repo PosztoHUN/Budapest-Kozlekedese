@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autóbuszok</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../bootstrap-5.3.3-dist/">
+        <style>
+            img, th, td{
+                width: 160px;
+                height: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 topnav">
+                    <a class="active" id="home" href="#home">Autóbuszok</a>
+                    <a href="#mult">Múlt</a>
+                    <a href="#jelen">Jelen</a>
+                    <a href="index.html">Vissza a főoldalra</a>
+                    <a href="#time"><p id="datetime"></p></a>
+                    <input type="text" placeholder="Keresés...">
+                </div>
+            </div>
+        </header>
+        <section>
+            <table>
+                <caption id="jelen"><h1>Aktív busztípúsok</h1></caption>
+                <tr>
+                    <th>
+                        <p>Kép</p>
+                    </th>
+                    <th>
+                        <p>Típús</p>
+                    </th>
+                    <th>
+                        <p>Összes gyártott darabszám</p>
+                    </th>
+                    <th>
+                        <p>Aktív darabszám</p>
+                    </th>
+                    <th>
+                        <p>Üzemben (Budapesten)</p>
+                    </th>
+                    <th>    
+                        <p>Üzemeltető</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/BPO248_240226 (19).JPG" alt="BPO-248-as Kőbánya alsón 2024 februárjában.">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 412</p>
+                    </td>
+                    <td>
+                        <p>115 db</p>
+                    </td>
+                    <td>
+                        <p>15 db + 1 Retró</p>
+                    </td>
+                    <td>
+                        <p>1999-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus E91</p>
+                    </td>
+                    <td>
+                        <p>5 db</p>
+                    </td>
+                    <td>
+                        <p>5 db</p>
+                    </td>
+                    <td>
+                        <p>2020-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/MXJ013_240313_148P (26).JPG" alt="MXJ-013-as pótol a 148-as vonalon 2024 márciusában.">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus V127</p>
+                    </td>
+                    <td>
+                        <p>18 db</p>
+                    </td>
+                    <td>
+                        <p>18 db</p>
+                    </td>
+                    <td>
+                        <p>2014-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus V187</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>2013-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Karsan Atak</p>
+                    </td>
+                    <td>
+                        <p>17 db</p>
+                    </td>
+                    <td>
+                        <p>15 db</p>
+                    </td>
+                    <td>
+                        <p>2015-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/NAY348_240226 (2).JPG" alt="NAY-348-as a 184-es vonalon 2024 februárjában.">
+                    </td>
+                    <td>
+                        <p>MAN Lion's City A21</p>
+                    </td>
+                    <td>
+                        <p>263 db</p>
+                    </td>
+                    <td>
+                        <p>225 db</p>
+                    </td>
+                    <td>
+                        <p>2014-</p>
+                    </td>
+                    <td>
+                        <p>ArrivaBus, <br> Volánbusz</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MAN Lion's City 12 CNG</p>
+                    </td>
+                    <td>
+                        <p>75 db</p>
+                    </td>
+                    <td>
+                        <p>75 db</p>
+                    </td>
+                    <td>
+                        <p>2022-</p>
+                    </td>
+                    <td>
+                        <p>Volánbusz</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/P1150892.JPG" alt="">
+                    </td>
+                    <td>
+                        <p>MAN Lion's City 12D</p>
+                    </td>
+                    <td>
+                        <p>81 db</p>
+                    </td>
+                    <td>
+                        <p>81 db</p>
+                    </td>
+                    <td>
+                        <p>2023-</p>
+                    </td>
+                    <td>
+                        <p>ArrivaBus</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MAN Lion's City 18D</p>
+                    </td>
+                    <td>
+                        <p>81 db</p>
+                    </td>
+                    <td>
+                        <p>81 db</p>
+                    </td>
+                    <td>
+                        <p>2023-</p>
+                    </td>
+                    <td>
+                        <p>ArrivaBus</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/LYH116_240220.JPG" alt="LYH-116-os a Batthyány téren, 2024 februárja.">
+                    </td>
+                    <td>
+                        <p>Mercedes-Benz Citaro O530</p>
+                    </td>
+                    <td>
+                        <p>91 db</p>
+                    </td>
+                    <td>
+                        <p>68 db</p>
+                    </td>
+                    <td>
+                        <p>2012-</p>
+                    </td>
+                    <td>
+                        <p>BKV, <br> <em>VT-Arriva</em></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Mercedes-Benz Citaro O530 G</p>
+                    </td>
+                    <td>
+                        <p>30 db</p>
+                    </td>
+                    <td>
+                        <p>25 db</p>
+                    </td>
+                    <td>
+                        <p>2017-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/P1170691.JPG" alt="PKN-620-as Kökin 2024 februárjában, 98E-n.">
+                    </td>
+                    <td>
+                        <p>Mercedes-Benz Conecto /NG</p>
+                    </td>
+                    <td>
+                        <p>201 db</p>
+                    </td>
+                    <td>
+                        <p>201 db</p>
+                    </td>
+                    <td>
+                        <p>2015-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/NCA403_RVY715_240219.JPG" alt="Két különböző generáció találkozása a Határ úton.">
+                    </td>
+                    <td>
+                        <p>Mercedes-Benz Conecto G /NG</p>
+                    </td>
+                    <td>
+                        <p>318 db</p>
+                    </td>
+                    <td>
+                        <p>318 db</p>
+                    </td>
+                    <td>
+                        <p>2015-</p>
+                    </td>
+                    <td>
+                        <p>BKV, <br>ArrivaBus, <br>Volánbusz</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Mercedes-Benz eCitaro</p>
+                    </td>
+                    <td>
+                        <p>40 db</p>
+                    </td>
+                    <td>
+                        <p>40 db</p>
+                    </td>
+                    <td>
+                        <p>2021-</p>
+                    </td>
+                    <td>
+                        <p>Volánbusz</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Modulo M108d</p>
+                    </td>
+                    <td>
+                        <p>56 db</p>
+                    </td>
+                    <td>
+                        <p>46 db</p>
+                    </td>
+                    <td>
+                        <p>2016-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Modulo M168d</p>
+                    </td>
+                    <td>
+                        <p>21 db</p>
+                    </td>
+                    <td>
+                        <p>21 db</p>
+                    </td>
+                    <td>
+                        <p>2018-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Modulo Medio Electric</p>
+                    </td>
+                    <td>
+                        <p>20 db</p>
+                    </td>
+                    <td>
+                        <p>14 db</p>
+                    </td>
+                    <td>
+                        <p>2016-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/P1140773.JPG" alt="">
+                    </td>
+                    <td>
+                        <p>Renault Master</p>
+                    </td>
+                    <td>
+                        <p>6 db</p>
+                    </td>
+                    <td>
+                        <p>5 db</p>
+                    </td>
+                    <td>
+                        <p>2010-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Solaris Urbino 10</p>
+                    </td>
+                    <td>
+                        <p>8 db</p>
+                    </td>
+                    <td>
+                        <p>8 db</p>
+                    </td>
+                    <td>
+                        <p>2014-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Vehicel Cytios 3</p>
+                    </td>
+                    <td>
+                        <p>8 db</p>
+                    </td>
+                    <td>
+                        <p>8 db</p>
+                    </td>
+                    <td>
+                        <p>2014-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>VanHool newA330</p>
+                    </td>
+                    <td>
+                        <p>4 db</p>
+                    </td>
+                    <td>
+                        <p>2 db</p>
+                    </td>
+                    <td>
+                        <p>2013-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/MUM648_240306 (1).JPG" alt="93-ason MUM-648">
+                    </td>
+                    <td>
+                        <p>VanHool newA330 CNG</p>
+                    </td>
+                    <td>
+                        <p></p>
+                    </td>
+                    <td>
+                        <p>42 db</p>
+                    </td>
+                    <td>
+                        <p>2014-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/LOV875_240226.JPG" alt="Ismerősöm kedvenc LVO-ja a 142E-n (875)">
+                    </td>
+                    <td>
+                        <p>VanHool AG318</p>
+                    </td>
+                    <td>
+                        <p>32 db</p>
+                    </td>
+                    <td>
+                        <p>17 db</p>
+                    </td>
+                    <td>
+                        <p>2009-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/MUT890_240305 (2).JPG" alt="">
+                    </td>
+                    <td>
+                        <p>VanHool newAG300</p>
+                    </td>
+                    <td>
+                        <p>44 db</p>
+                    </td>
+                    <td>
+                        <p>42 db</p>
+                    </td>
+                    <td>
+                        <p>2015-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/NCZ550_240220 (5).JPG" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7000</p>
+                    </td>
+                    <td>
+                        <p>38 db</p>
+                    </td>
+                    <td>
+                        <p>24 db</p>
+                    </td>
+                    <td>
+                        <p>2015-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/MFW505_240220 (3).JPG" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7700</p>
+                    </td>
+                    <td>
+                        <p>41 db</p>
+                    </td>
+                    <td>
+                        <p>18 db</p>
+                    </td>
+                    <td>
+                        <p>2012-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7700 Hybrid</p>
+                    </td>
+                    <td>
+                        <p>29 db</p>
+                    </td>
+                    <td>
+                        <p>28 db</p>
+                    </td>
+                    <td>
+                        <p>2012-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7900 Hybrid</p>
+                    </td>
+                    <td>
+                        <p>12 db</p>
+                    </td>
+                    <td>
+                        <p>11 db</p>
+                    </td>
+                    <td>
+                        <p>2019-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/FLR701_240220 (1).JPG" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7700A</p>
+                    </td>
+                    <td>
+                        <p>150 db</p>
+                    </td>
+                    <td>
+                        <p>86 db</p>
+                    </td>
+                    <td>
+                        <p>2004-</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/P1160244.JPG" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7900A</p>
+                    </td>
+                    <td>
+                        <p>61 db</p>
+                    </td>
+                    <td>
+                        <p>26 db</p>
+                    </td>
+                    <td>
+                        <p>2014-</p>
+                    </td>
+                    <td>
+                        <p>Volánbusz</p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <caption id="mult"><h1>Már nem aktív típúsok</h1> (1948-tól)</caption>
+                <tr>
+                    <th>
+                        <p>Kép</p>
+                    </th>
+                    <th>
+                        <p>Típús</p>
+                    </th>
+                    <th>
+                        <p>Darabszám</p>
+                    </th>
+                    <th>
+                        <p>Üzemben</p>
+                    </th>
+                    <th>
+                        <p>Üzemeltető</p>
+                    </th>
+                    <th>
+                        Nosztalgia/Retró
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MÁVAG–Uhri Tr 5</p>
+                    </td>
+                    <td>
+                        <p>240 db</p>
+                    </td>
+                    <td>
+                        <p>1948-1963</p>
+                    </td>
+                    <td>
+                        <p>BSZKRT, <br>FAKV, <br>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MÁVAG–Uhri Tr 3,5</p>
+                    </td>
+                    <td>
+                        <p>49 db</p>
+                    </td>
+                    <td>
+                        <p>1948-1956</p>
+                    </td>
+                    <td>
+                        <p>BSZKRT, <br>FAKV, <br>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 30</p>
+                    </td>
+                    <td>
+                        <p>200 db</p>
+                    </td>
+                    <td>
+                        <p>1951-1962</p>
+                    </td>
+                    <td>
+                        <p>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 31</p>
+                    </td>
+                    <td>
+                        <p>22 db</p>
+                    </td>
+                    <td>
+                        <p>1959-1964</p>
+                    </td>
+                    <td>
+                        <p>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 60</p>
+                    </td>
+                    <td>
+                        <p>508 db</p>
+                    </td>
+                    <td>
+                        <p>1952-1967</p>
+                    </td>
+                    <td>
+                        <p>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 66</p>
+                    </td>
+                    <td>
+                        <p>76 db</p>
+                    </td>
+                    <td>
+                        <p>1954-1964</p>
+                    </td>
+                    <td>
+                        <p>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 601</p>
+                    </td>
+                    <td>
+                        <p>6 db</p>
+                    </td>
+                    <td>
+                        <p>1953-1956</p>
+                    </td>
+                    <td>
+                        <p>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MÁVAG M5</p>
+                    </td>
+                    <td>
+                        <p>31 db</p>
+                    </td>
+                    <td>
+                        <p>1958-1963</p>
+                    </td>
+                    <td>
+                        <p>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 620</p>
+                    </td>
+                    <td>
+                        <p>940 db</p>
+                    </td>
+                    <td>
+                        <p>1959-1978</p>
+                    </td>
+                    <td>
+                        <p>FAÜ, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 630</p>
+                    </td>
+                    <td>
+                        <p>13 db</p>
+                    </td>
+                    <td>
+                        <p>1959-1964</p>
+                    </td>
+                    <td>
+                        <p>FAÜ</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>FAÜ-ITC 600</p>
+                    </td>
+                    <td>
+                        <p>147 db</p>
+                    </td>
+                    <td>
+                        <p>1960-1969</p>
+                    </td>
+                    <td>
+                        <p>FAÜ, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>FAÜ-ITC 620</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>1962-1968</p>
+                    </td>
+                    <td>
+                        <p>FAÜ, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>FAÜ-ITC 622</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>1961-1968</p>
+                    </td>
+                    <td>
+                        <p>FAÜ, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>FAÜ-ITC 660</p>
+                    </td>
+                    <td>
+                        <p>170 db</p>
+                    </td>
+                    <td>
+                        <p>1962-1975</p>
+                    </td>
+                    <td>
+                        <p>FAÜ, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 180</p>
+                    </td>
+                    <td>
+                        <p>416 db</p>
+                    </td>
+                    <td>
+                        <p>1964-1980</p>
+                    </td>
+                    <td>
+                        <p>FAÜ, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 556</p>
+                    </td>
+                    <td>
+                        <p>275 db</p>
+                    </td>
+                    <td>
+                        <p>1964-1980</p>
+                    </td>
+                    <td>
+                        <p>FAÜ, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>2 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 211</p>
+                    </td>
+                    <td>
+                        <p>4 db</p>
+                    </td>
+                    <td>
+                        <p>1975-1986</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 282</p>
+                    </td>
+                    <td>
+                        <p>5 db</p>
+                    </td>
+                    <td>
+                        <p>1977-1989</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 190</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>1979-1981</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 284</p>
+                    </td>
+                    <td>
+                        <p>2 db</p>
+                    </td>
+                    <td>
+                        <p>1985-1987, <br> 2007</p>
+                    </td>
+                    <td>
+                        <p>BKV, <br>VT-Transman</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 521</p>
+                    </td>
+                    <td>
+                        <p>16 db</p>
+                    </td>
+                    <td>
+                        <p>1989-1995</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MAN SL223</p>
+                    </td>
+                    <td>
+                        <p>35 db</p>
+                    </td>
+                    <td>
+                        <p>2001-2015</p>
+                    </td>
+                    <td>
+                        <p>VT-Transman, <br> VT-Arriva</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Irisbus Agora</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>2003-2019</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 8500 Aabenraa</p>
+                    </td>
+                    <td>
+                        <p>22 db</p>
+                    </td>
+                    <td>
+                        <p>2012-2015</p>
+                    </td>
+                    <td>
+                        <p>VT-Transman, <br> VT-Arriva</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MAN NM 223</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>2013-2014</p>
+                    </td>
+                    <td>
+                        <p>Kontakt Busz</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 5000A</p>
+                    </td>
+                    <td>
+                        <p>9 db</p>
+                    </td>
+                    <td>
+                        <p>2001-2009</p>
+                    </td>
+                    <td>
+                        <p>Nógrád Volán</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Molitus S91</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                    <td>
+                        <p>2013-2016</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 263</p>
+                    </td>
+                    <td>
+                        <p>25 db</p>
+                    </td>
+                    <td>
+                        <p>1999-2007, <br> 2010-2019</p>
+                    </td>
+                    <td>
+                        <p>VT-Transman, <br> BKV</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7900A Hybrid</p>
+                    </td>
+                    <td>
+                        <p>9 db</p>
+                    </td>
+                    <td>
+                        <p>2015-2016, <br> 2018-2019</p>
+                    </td>
+                    <td>
+                        <p>T&J, <br> Volánbusz</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Alfa Localo</p>
+                    </td>
+                    <td>
+                        <p>82 db</p>
+                    </td>
+                    <td>
+                        <p>2005-2022</p>
+                    </td>
+                    <td>
+                        <p>Nógrád Volán, <br> VT-Arriva</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>VanHool A300</p>
+                    </td>
+                    <td>
+                        <p>13 db</p>
+                    </td>
+                    <td>
+                        <p>2012-2021</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/MTZ969_240226 (24).JPG" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 415</p>
+                    </td>
+                    <td>
+                        <p>176 db</p>
+                    </td>
+                    <td>
+                        <p>1985-2022</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>2 db + 5 oktató</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Mercedes-Benz Citaro O530 CNG</p>
+                    </td>
+                    <td>
+                        <p>22 db</p>
+                    </td>
+                    <td>
+                        <p>2016-2022</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 260</p>
+                    </td>
+                    <td>
+                        <p>2393 db</p>
+                    </td>
+                    <td>
+                        <p>1971-2022</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>6 db +3 törtető </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../kepek/P1170090.JPG" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 280</p>
+                    </td>
+                    <td>
+                        <p>1704 db</p>
+                    </td>
+                    <td>
+                        <p>1971-2022</p>
+                    </td>
+                    <td>
+                        <p>BKV, <br> VT-Transman</p>
+                    </td>
+                    <td>
+                        <p>8 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 435</p>
+                    </td>
+                    <td>
+                        <p>172 db</p>
+                    </td>
+                    <td>
+                        <p>1988-2022</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>3 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>MAN Lion's City GL</p>
+                    </td>
+                    <td>
+                        <p>11 db</p>
+                    </td>
+                    <td>
+                        <p>2018-2022</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>                
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p class="ikarus">Ikarus 405</p>
+                    </td>
+                    <td>
+                        <p>92 db</p>
+                    </td>
+                    <td>
+                        <p>1994-2023</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>1 db</p>
+                    </td>
+                </tr>                
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Alfa Cívis</p>
+                    </td>
+                    <td>
+                        <p>17 db</p>
+                    </td>
+                    <td>
+                        <p>2014-2023</p>
+                    </td>
+                    <td>
+                        <p>BKV</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                    <td>
+                        <p>Volvo 7000A</p>
+                    </td>
+                    <td>
+                        <p>44 db</p>
+                    </td>
+                    <td>
+                        <p>2006-2023</p>
+                    </td>
+                    <td>
+                        <p>BKV, <br> Nógrád Volán</p>
+                    </td>
+                    <td>
+                        <p>0 db</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <a href="index.html">Vissza</a>
+            <a href="#home">Vissza a tetejére</a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
