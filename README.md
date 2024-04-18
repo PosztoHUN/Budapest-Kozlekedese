@@ -1,2 +1,2 @@
-# Ikarus
-Ikarus buszok listázása, leírása, összefoglalása.
+# Budapest
+Helyi tömegközlekedeés listázása, leírása.
