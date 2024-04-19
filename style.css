@@ -13,6 +13,9 @@ tr, th, td{
     text-align: center;
     border: 1px solid black;
 }
+h1{
+    text-align: center;
+}
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
