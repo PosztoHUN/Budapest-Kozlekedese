@@ -1,2 +1,2 @@
 # Budapest
-Helyi tömegközlekedeés listázása, leírása.
+Helyi tömegközlekedés listázása, leírása.
