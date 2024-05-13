@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Vonalak</title>
+    <style>
+        img, th, td{
+            max-width: 160px;
+            max-height: 120px;
+            border: 1px solid black;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 topnav">
+                <a class="active" id="home" href="#home">Vonalak</a>
+                <a href="#mult">Múlt</a>
+                <a href="#jelen">Jelen</a>
+                <a href="index.html">Vissza a főoldalra</a>
+                <a href="#time"><p id="datetime"></p></a>
+                <input type="text" placeholder="Keresés...">
+            </div>
+        </div>
+    </header>
+    <section>
+        <table>
+            <h1 id="jelen">Aktív vonalak</h1>
+            <tr>
+                <th>
+                    <p>Vonal</p>
+                </th>
+                <th>
+                    <p>Üzemeltető</p>
+                </th>
+                <th>
+                    <p>Kiadó telephely</p>
+                </th>
+                <th>
+                    <p>Típús</p>
+                </th>
+                <th>
+                    <p>Végállomások</p>
+                </th>
+                <th>
+                    <p>Hosszúság</p>
+                </th>
+                <th>
+                    <p>Első üzemnap</p>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p>1</p>
+                </td>
+                <td>
+                    <p>BKV</p>
+                </td>
+                <td>
+                    <p>Baross, Hungária, <br> Budafok, Angyalföld</p>
+                </td>
+                <td>
+                    <p>CKD Tatra T5C5, CKD-BKV Tatra T5C5K2, <br>Siemens Combino Supra Budapest NF12B, <br>CAF Urbos 5/9</p>
+                </td>
+                <td>
+                    <p>Kelenföld vasútállomás M <br>-<br> Bécsi út/Vörösvári út</p>
+                </td>
+                <td>
+                    <p>18 km</p>
+                </td>
+                <td>
+                    <p>1984.11.06.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1A</p>
+                </td>
+                <td>
+                    <p>BKV</p>
+                </td>
+                <td>
+                    <p>CKD Tatra T5C5, CKD-BKV Tatra T5C5K2</p>
+                </td>
+                <td>
+                    <p>Angyalföld, Baross</p>
+                </td>
+                <td>
+                    <p>Népliget M <br>-<br> Bécsi út/Vörösvári út</p>
+                </td>
+                <td>
+                    <p>11,2 km</p>
+                </td>
+                <td>
+                    <p>2023.06.01.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
